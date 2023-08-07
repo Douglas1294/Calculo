@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte</title>
+</head>
+<body>
+    <h2>Multiplicação</h2>
+    <hr>
+    <p>Digite um Valor:
+        <input id="x" value=""/>
+        <p> Digite outro valor:
+            <input id="y" value=""/>      </br>
+        </p>
+    </p>
+    <button onclick="funcao(x,y)">Aperte para Somar</button>
+    <p id="ex11"></p>
+    <script>
+        function funcao() {
+            let x = document.getElementById("x").value;
+            let y = document.getElementById("y").value;
+            document.getElementById("ex11").innerHTML="Resultado =" + x*y;
+        }
+    </script>
+</body>
+</html>
